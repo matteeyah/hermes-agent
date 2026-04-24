@@ -877,7 +877,7 @@ def fetch_openrouter_models(
 
     try:
         req = urllib.request.Request(
-            "https://openrouter.ai/api/v1/models",
+            "https://openrouter.ai/api/v1/models/user",
             headers={"Accept": "application/json"},
         )
         with urllib.request.urlopen(req, timeout=timeout) as resp:
